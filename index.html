@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitarists</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <!--
+            Hopefully top of page in big letters
+        -->
+        <div id="header">
+            <h1>Pick a guitarist!</h1>
+        </div>
+<!--
+    I am wanting this as a select drop down menu to select
+    guitarists. On next project, I want the drop down menu to 
+    be blank and insert elements into the DOM
+-->
+    <form>
+        <label for="guitarist">--Select--</label>
+        <select name="guitarist" id="guitarist">
+            <option value="Michael">Michael Angelo Batio</option>
+            <option value="Paul">Paul Gilbert</option>
+            <option value="Yngwie">Yngwie Malmsteen</option>
+            <option value="Dime">Dimebag Darrell</option>
+        </select>
+    </form>
+    </header>
+
+    <main>
+        <!--
+            I want this section to show a picture of the
+            guirist selected and a little bit of the guiarist.
+        -->
+        <hr/>
+        <section>
+            <!--
+                So for the time being, I want the default picture
+                to be of Michael, as the select is on his name
+                by default. And hide the rest of the pictures.
+            -->
+            <div class="item">
+                <div class="inactive"><img src="../images/Dime" id="Dime" width="100" height="200"></div>
+                <div class="inactive" id="Michael"><img src="../images/Michael" class="inactive" width="100" height="200"></div>
+                <div class="inactive"><img src="../images/Paul" class="inactive" id="Paul" width="100" height="200"></div>
+                <div class="inactive"><img src="../images/Yngwie" class="inactive" id="Yngwie" width="100" height="200"></div>
+            </div>
+        </section>
+        <hr/>
+    </main>
+    <script scr="../index.js"></script>
+</body>
+
+</html>
